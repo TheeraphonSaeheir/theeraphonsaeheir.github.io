@@ -1,0 +1,119 @@
+.newproduct{
+    display: flex;
+    border: 1px solid red;
+    height : 100px;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+}
+
+.no-bullet{
+    list-style: none;
+
+    height: 100%;
+
+}
+.no-bullet a{
+    color: black;
+    text-decoration: none;
+    padding: 13px;
+    transition: color 0.3s, background-color 0.3s;
+  
+
+}
+.no-bullet a:hover{
+    background-color: white;
+    color: red;
+}
+.button{
+    border: none;
+    background: none;
+}
+
+.logo{
+    width: 100px;
+}
+.c-item{
+    height: 500px;
+}
+.c-img{
+    height:100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+  
+}
+.c-color{
+    background-color: gray;
+}
+.product-item{
+    text-align: center;
+    align-items: center;
+}
+.p-img{
+    width:100%;
+    height:300px;
+    object-fit: cover;
+   
+}
+.promotion-box  {
+    height: 400px;
+    position: relative;
+}
+.promotion-img{
+    width: 100%;
+    height: 100%;
+}
+.promotion-sale{
+    position: absolute;
+    right: 10px;
+    top:10px;
+    background-color: red;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: aliceblue;
+    transition: color 0.3s, background-color 0.3s;
+}
+.promotion-sale:hover{
+    background-color: white;
+    color: black;
+   
+}
+.promotion-new{
+    position: absolute;
+    right: 10px;
+    top:10px;
+    background-color: red;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: aliceblue;
+    transition: color 0.3s, background-color 0.3s;
+}
+.promotion-new:hover{
+    background-color: white;
+    color: black;
+   
+}
+
+.promotion-info-main{
+    position: absolute;
+    left:10px;
+    top:20px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: aliceblue;
+}
+
+.promotion-info-mass{
+    position: absolute;
+    left:10px;
+    top:80px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: aliceblue;
+}
+.promotion-btn{
+    position: absolute;
+    right:10px;
+    bottom: 1px;
+    color: white;
+}
