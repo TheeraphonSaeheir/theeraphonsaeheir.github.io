@@ -1,27 +1,239 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link href="style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
 
-    <title>Hello, world! I'm Prame</title>
-  </head>
-  <body>
-    <h1>ทดสอบการแสดงผลบน GitHub Pages</h1>
+<body>
+  <header class="container-fluid bg-secondary bg-gradient  ">
+    <div class="row align-items-start ">
+      <div class="col-2 text-center text-body-tertiary">
+        <i class="bi bi-telephone-outbound"></i> 82-341-0990
+      </div>
+      <div class="col-8 text-center text-body-tertiary">
+        Get 50 % Off on select Items | <a class="icon-link text-decoration-none text-body-tertiary text-center"
+          href="#">
+          Shop Now
+        </a>
+      </div>
+      <div class="col-2 text-end text-body-tertiary">
+        <div class="row">
+          <div class="col-6">
+            <div class="dropdown">
+              <button class="bg-secondary bg-gradient dropdown-toggle fs-6 text-body-tertiary border-0" type="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Eng
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Thai</a></li>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="dropdown">
+              <button class="bg-secondary bg-gradient dropdown-toggle fs-6 text-body-tertiary border-0" type="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Light
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Dark</a></li>
+            </div>
+          </div>
 
-    <!-- Optional JavaScript; choose one of the two! -->
+        </div>
+      </div>
+    </div>
+  </header>
+  <nav class="container">
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <div class="row m-0 p-0">
+      <div class="col-3 text-start">
+        <div class="fs-4 text-secondary-emphasis m-2 text-start">
+          <img src="https://cdn.pixabay.com/photo/2017/01/31/13/14/animal-2023924_1280.png" width="80px" height="50px">
+        </div>
+      </div>
+      <div class="col-6">
+        <ul class="d-flex justify-content-evenly no-bullet align-items-center">
+          <li><a href="#" class=" fs-5 ">Home</a></li>
+          <li><a href="#" class=" fs-5">Shop</a></li>
+          <li><a href="#" class="fs-5">Blog</a></li>
+          <li><a href="#" class="fs-5">Page</a></li>
+          <li><a href="#" class="fs-5">Contact</a></li>
+        </ul>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    -->
-  </body>
+      </div>
+      <div class="col-3 text-center text-secondary-emphasis">
+        <form class="d-flex m-2" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="button fs-4" type="submit"><i class="bi bi-search-heart"></i></button>
+          <a href="#"><i class="bi bi-cart fs-3 ms-3"> </i></a>
+        </form>
+      </div>
+  </nav>
+  <main class="container">
+    <div id="skincare-carousel" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#skincare-carousel" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#skincare-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#skincare-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner mt-1">
+        <div class="carousel-item active c-item">
+          <img
+            src="https://scontent.fbkk2-4.fna.fbcdn.net/v/t1.15752-9/385434529_643268464668224_445944508377472693_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=8cd0a2&_nc_eui2=AeEQJE6WQyGpfu_Jw_vXBp-L9S9p3bOKy2_1L2nds4rLbwB5QQ1_WtaTFteWYOXzACDZzx2Fcr-Z1_bG9_7yAKid&_nc_ohc=S5y5xdiJZI0AX9imUz9&_nc_ht=scontent.fbkk2-4.fna&oh=03_AdTEPUv8u3gtveknOAyeX13Be-0IUJlfW8X9Gkq0bihhuw&oe=65530C6E"
+            class="d-block w-100 c-img" alt="slide1">
+          <div class="carousel-caption d-none d-md-block top-0 mt-4 align-items-end ">
+            <p class="mt-4 fs-6 text-uppercase text-end">First slide label</p>
+            <h1 class="fw-bolder text-capitalize text-end">Some representative </h1>
+            <button class="btn btn-primary px-4 py-2 fs-5 mt-5 ">Buy Now</button>
+          </div>
+        </div>
+        <div class="carousel-item c-item">
+          <img
+            src="https://images.unsplash.com/photo-1620755901999-166c6c151efe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+            class="d-block w-100 c-img" alt="slide1">
+          <div class="carousel-caption d-none d-md-block top-0 mt-4">
+            <p class="mt-4 fs-6 text-uppercase">First slide label</p>
+            <h1 class="fw-bolder text-capitalize">Some representative </h1>
+            <button class="btn btn-primary px-4 py-2 fs-5 mt-5">Buy Now</button>
+          </div>
+        </div>
+        <div class="carousel-item c-item">
+          <img
+            src="https://images.unsplash.com/photo-1576426863848-c21f53c60b19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+            class="d-block w-100 c-img" alt="slide1">
+          <div class="carousel-caption d-none d-md-block top-0 mt-4">
+            <p class="mt-4 fs-6 text-uppercase">First slide label</p>
+            <h1 class="fw-bolder text-capitalize">Some representative </h1>
+            <button class="btn btn-primary px-4 py-2 fs-5 mt-5">Buy Now</button>
+          </div>
+        </div>
+
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#skincare-carousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#skincare-carousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+  </main>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-2"></div>
+      <div class="col-8">
+        <h1 class="display-4 text-center mt-5 p-0 fw-bold">Our Featured Products</h1>
+        <p class="text-center mt-2 fs-5 fst-italic">Welcome to my shop</p>
+      </div>
+      <div class="col-2"></div>
+    </div>
+  </div>
+
+  <div class="album py-5 bg-body-tertiary">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
+        <div class="col-3">
+          <div class="product-item border-0 border-black rounded">
+            <img class="p-img border rounded-top "
+              src="https://plus.unsplash.com/premium_photo-1681364365218-2a882a191f2a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80">
+            <div class="product-info border rounded-bottom">
+              <p class="fs-6 mt-3 mb-0">450 THB</p>
+              <p class="fs-4">ACT+ Arce</p>
+              <button class="btn btn-primary mt-0 mb-3"> Buy Now</button>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="product-item border-0 border-black rounded">
+            <img class="p-img border rounded-top "
+              src="https://images.unsplash.com/photo-1566958769312-82cef41d19ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1478&q=80">
+            <div class="product-info border rounded-bottom">
+              <p class="fs-6 mt-3 mb-0">450 THB</p>
+              <p class="fs-4">ACT+ Arce</p>
+              <button class="btn btn-primary mt-0 mb-3"> Buy Now</button>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="product-item border-0 border-black rounded">
+            <img class="p-img border rounded-top "
+              src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1506&q=80">
+            <div class="product-info border rounded-bottom">
+              <p class="fs-6 mt-3 mb-0">450 THB</p>
+              <p class="fs-4">ACT+ Arce</p>
+              <button class="btn btn-primary mt-0 mb-3"> Buy Now</button>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="product-item border-0 border-black rounded">
+            <img class="p-img border rounded-top "
+              src="https://images.unsplash.com/photo-1564020799643-54f7ab923d61?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80">
+            <div class="product-info border rounded-bottom">
+              <p class="fs-6 mt-3 mb-0">450 THB</p>
+              <p class="fs-4">ACT+ Arce</p>
+              <button class="btn btn-primary mt-0 mb-3"> Buy Now</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mb-4">
+    <div class="row g-5">
+      <div class="col-6">
+        <div class="promotion-box border">
+          <img
+            src="https://images.unsplash.com/photo-1633793566102-ee7793834059?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+            alt="promotion" class="promotion-img">
+          <button class="promotion-sale fs-4">Sale 50 %</button>
+          <p class="promotion-info-main display-6 fw-bolder">50% of Everything</p>
+          <p class="promotion-info-mass fs-3 fw-bolder">Lorem ipsum dolor sit amet consectetur.</p>
+          <button class="promotion-btn btn btn-outline-secondary fs-3">More details</button>
+
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="promotion-box border">
+          <img
+            src="https://images.unsplash.com/photo-1599022484226-2cd40d53a027?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1455&q=80"
+            alt="promotion" class="promotion-img">
+          <button class="promotion-new fs-4">New Arrival</button>
+          <p class="promotion-info-main display-6 fw-bolder">New Arrivals</p>
+          <p class="promotion-info-mass fs-3 fw-bolder">Lorem ipsum dolor sit amet consectetur.</p>
+          <button class="promotion-btn btn btn-outline-secondary fs-3">More details</button>
+
+        </div>
+      </div>
+     
+    </div>
+  </div>
+  <div class="container mt-2">
+    <div class="d-flex justify-content-center mt-3">
+      <button type="button" class="btn btn-outline-secondary mx-4">Catagories</button>
+      <button type="button" class="btn btn-outline-secondary mx-4">Skincare</button>
+      <button type="button" class="btn btn-outline-secondary mx-4">Foams</button>
+      <button type="button" class="btn btn-outline-secondary mx-4">Others</button>
+    </div>
+  </div>
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
 </html>
