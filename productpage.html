@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+    <header class="container-fluid bg-secondary bg-gradient  ">
+        <div class="row align-items-start ">
+            <div class="col-2 text-center text-body-tertiary">
+                <i class="bi bi-telephone-outbound"></i> 82-341-0990
+            </div>
+            <div class="col-8 text-center text-body-tertiary topbar">
+                Get 50 % Off on select Items | <a class="icon-link text-decoration-none text-center" href="index.html">
+                    Home
+                </a>
+            </div>
+            <div class="col-2 text-end text-body-tertiary">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="dropdown">
+                            <button class="bg-secondary bg-gradient dropdown-toggle fs-6 text-body-tertiary border-0"
+                                type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Eng
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Thai</a></li>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="dropdown">
+                            <button class="bg-secondary bg-gradient dropdown-toggle fs-6 text-body-tertiary border-0"
+                                type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Light
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Dark</a></li>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav class="container">
+
+        <div class="row m-0 p-0">
+            <div class="col-3 text-start">
+                <div class="fs-4 text-secondary-emphasis m-2 text-start">
+                    <img src="https://cdn.pixabay.com/photo/2017/01/31/13/14/animal-2023924_1280.png" width="80px"
+                        height="50px">
+                </div>
+            </div>
+            <div class="col-6">
+                <ul class="d-flex justify-content-evenly no-bullet align-items-center">
+                    <li><a href="index.html" class=" fs-5 ">Home</a></li>
+                    <li><a href="product.html" class=" fs-5 active-menu disable">Products</a></li>
+                    <li><a href="#" class="fs-5">Blog</a></li>
+                    <li><a href="#" class="fs-5">Page</a></li>
+                    <li><a href="#" class="fs-5">Contact</a></li>
+                </ul>
+
+            </div>
+            <div class="col-3 text-center text-secondary-emphasis">
+                <div class="d-flex align-items-center justify-content-end">
+                    <button class="btn-cart mt-2" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i
+                            class="bi bi-cart fs-3 me-3"> </i></button>
+
+                    <p class="cart-count" id="addcart">0</p>
+                </div>
+
+
+            </div>
+
+
+            <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+                aria-labelledby="offcanvasWithBothOptionsLabel">
+                <div class="offcanvas-header border bg-body-tertiary cart_title">
+                    <h5 class="offcanvas-title " id="offcanvasWithBothOptionsLabel">Your Cart <i
+                            class="bi bi-cart fs-3 me-3"> </i></h5>
+                    <p class="cart_counts" id="cartlist"> 0 </p>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body mt-1 bg-body-tertiary border">
+                    <!--Cart item-->
+                    <div class="container_cart " id="cartitem">
+                        <!--
+                        <div class="row border">
+                                <div class="col-5">
+                                    <img src="logo.jpg" class="img_oncart">
+                                </div>
+                                <div class="col-5 g-0 ">
+                                    <p class="fst-italic fs-6 mt-2 mb-0">Wild Honey Moisturising Cream</p>
+                                    <div class="priceitem">
+                                        <div class="fs-5 mt-0">price :</div><span class="price-cart fw-bold">850 THB</span>
+                                    </div>
+                                    <div class="d-flex justify-content-start mt-2 mb-2">
+                                        <button class="count-cart fw-bold fs-5 shadow-sm" onclick="deleteditem()">-</button>
+                                        <div class="count-carts fw-bold mx-2" id="itemcart"> 1 </div>
+                                        <button class="count-cart fw-bolder fs-5 shadow-sm" onclick="additem()">+</button>
+                                    </div>
+                                </div>
+                                <div class="col-2  fs-5 cart_cancel">
+                                    <button class="btn_cancelcart">x</button>
+                                </div>
+
+                        </div>-->
+
+
+
+                    </div>
+                </div>
+
+                <!--Cart ACtion-->
+                <div class="cart_actions">
+                    <div class="subtotal d-flex justify-content-evenly mt-2">
+                        <p class="fw-bold">SUBTOTAL:</p>
+                        <p><span id="subtotal">3896</span> THB</p>
+                    </div>
+                    <button class="viewcart">View cart</button>
+                    <button class="checkout mt-2">Checkout</button>
+                </div>
+
+            </div>
+
+        </div>
+        </div>
+
+    </nav>
+    <div class="container-bar bg-body-tertiary">
+        <div class="d-flex display-5 fw-bolder fst-italic mb-0 ms-3">
+            <p class="mt-3">Shop</p>
+        </div>
+        <ol class="breadcrumb p-0 ms-3 bg-body-tertiary rounded-3 ">
+            <li class="breadcrumb-item text-decoration-none mt-0"><a
+                    class="link-body-emphasis fw-semibold text-decoration-none" href="index.html">Home</a></li>
+            <li class="breadcrumb-item text-decoration-none mt-0"><a
+                    class="link-body-emphasis fw-semibold text-decoration-none" href="product.html">Product</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Cream</li>
+        </ol>
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <img class="product-page p-2"
+                        src="https://plus.unsplash.com/premium_photo-1681364363935-5320f60904e5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1573&q=80">
+                </div>
+                <div class="col-6">
+                    <div class="fs-2 fw-bold fst-italic"> Wild Honey Moisturising Cream </div>
+                    <div class="fs-4 fst-italic"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam est
+                        consequuntur, non consequatur nam quibusdam.</div>
+                    <div class="mt-3"><span class="fs-5  fw-bold "> price:</span><span class="fs-5"> 890 THB</span>
+                    </div>
+                    <div class="fs-5 mt-2 fw-bold">Size : </div>
+                    <div class="size-product mt-1">
+                        <button class="btn-size">30mL</button>
+                        <button class="btn-size">50mL</button>
+                        <button class="btn-size">80mL</button>
+                        <button class="btn-size">100mL</button>
+                    </div>
+                    <div class="container mt-3">
+                        <div class="row">
+                            <div class="col-md-4 mt-3">
+                                <div class="d-flex justify-content-between">
+                                    <button class="count-cart fw-bold fs-5 shadow-lg" onclick="deleteditem()">-</button>
+                                    <div class="count-item fw-bold" id="itemcount">1</div>
+                                    <button class="count-cart fw-bold fs-5 shadow-lg" onclick="additem()">+</button>
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <button class="addtocart fw-bold mt-3 fs-5" onclick="addtocart()">ADD TO CART</button>
+                            </div>
+                        </div>
+                        <button class="btn-buy mt-3">BUY NOW</button>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+</body>
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+</html>
