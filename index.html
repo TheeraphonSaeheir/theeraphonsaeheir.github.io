@@ -8,7 +8,10 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link href="style.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
 </head>
 
 <body>
@@ -19,7 +22,7 @@
       </div>
       <div class="col-8 text-center text-body-tertiary">
         Get 50 % Off on select Items | <a class="icon-link text-decoration-none text-body-tertiary text-center"
-          href="#">
+          href="product.html">
           Shop Now
         </a>
       </div>
@@ -50,30 +53,31 @@
       </div>
     </div>
   </header>
-  <nav class="container">
+  <nav class="container-fluid bg-body-tertiary">
 
     <div class="row m-0 p-0">
       <div class="col-3 text-start">
-        <div class="fs-4 text-secondary-emphasis m-2 text-start">
+        <div class="fs-4 text-secondary-emphasis m-2 text-center">
           <img src="https://cdn.pixabay.com/photo/2017/01/31/13/14/animal-2023924_1280.png" width="80px" height="50px">
         </div>
       </div>
       <div class="col-6">
         <ul class="d-flex justify-content-evenly no-bullet align-items-center">
           <li><a href="#" class=" fs-5 ">Home</a></li>
-          <li><a href="#" class=" fs-5">Shop</a></li>
+          <li><a href="product.html" class=" fs-5">Products</a></li>
           <li><a href="#" class="fs-5">Blog</a></li>
           <li><a href="#" class="fs-5">Page</a></li>
           <li><a href="#" class="fs-5">Contact</a></li>
         </ul>
 
       </div>
-      <div class="col-3 text-center text-secondary-emphasis">
-        <form class="d-flex m-2" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="button fs-4" type="submit"><i class="bi bi-search-heart"></i></button>
-          <a href="#"><i class="bi bi-cart fs-3 ms-3"> </i></a>
-        </form>
+      <div class="col-3 text-center text-secondary-emphasis mt-2">
+        <ul class="nav col-md-4 list-unstyled d-flex justify-content-end">
+          <li class="ms-2 mt-3"><i class="bi bi-emoji-smile"></i></li>
+          <li class="ms-2 mt-3"><i class="bi bi-emoji-smile-upside-down-fill"></i></li>
+          <li class="ms-2 mt-3"><i class="bi bi-emoji-smile"></i></li>
+          <li class="ms-2 mt-3"><i class="bi bi-emoji-smile-upside-down-fill"></i></li>
+        </ul>
       </div>
   </nav>
   <main class="container">
@@ -87,7 +91,7 @@
       <div class="carousel-inner mt-1">
         <div class="carousel-item active c-item">
           <img
-            src="https://scontent.fbkk2-4.fna.fbcdn.net/v/t1.15752-9/385434529_643268464668224_445944508377472693_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=8cd0a2&_nc_eui2=AeEQJE6WQyGpfu_Jw_vXBp-L9S9p3bOKy2_1L2nds4rLbwB5QQ1_WtaTFteWYOXzACDZzx2Fcr-Z1_bG9_7yAKid&_nc_ohc=S5y5xdiJZI0AX9imUz9&_nc_ht=scontent.fbkk2-4.fna&oh=03_AdTEPUv8u3gtveknOAyeX13Be-0IUJlfW8X9Gkq0bihhuw&oe=65530C6E"
+            src="https://images.unsplash.com/photo-1671493227667-a1c472392c45?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
             class="d-block w-100 c-img" alt="slide1">
           <div class="carousel-caption d-none d-md-block top-0 mt-4 align-items-end ">
             <p class="mt-4 fs-6 text-uppercase text-end">First slide label</p>
@@ -127,7 +131,6 @@
         </button>
       </div>
   </main>
-
   <div class="container">
     <div class="row">
       <div class="col-2"></div>
@@ -139,29 +142,25 @@
     </div>
   </div>
 
-  <div class="album py-5 bg-body-tertiary">
-    <div class="container">
+  <div class="album py-5 bg-body-tertiary ">
+    <div class="container mb-4">
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
-        <div class="col-3">
-          <div class="product-item border-0 border-black rounded">
-            <img class="p-img border rounded-top "
-              src="https://plus.unsplash.com/premium_photo-1681364365218-2a882a191f2a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80">
-            <div class="product-info border rounded-bottom">
-              <p class="fs-6 mt-3 mb-0">450 THB</p>
-              <p class="fs-4">ACT+ Arce</p>
-              <button class="btn btn-primary mt-0 mb-3"> Buy Now</button>
-            </div>
 
-          </div>
-        </div>
         <div class="col-3">
           <div class="product-item border-0 border-black rounded">
             <img class="p-img border rounded-top "
               src="https://images.unsplash.com/photo-1566958769312-82cef41d19ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1478&q=80">
             <div class="product-info border rounded-bottom">
-              <p class="fs-6 mt-3 mb-0">450 THB</p>
-              <p class="fs-4">ACT+ Arce</p>
-              <button class="btn btn-primary mt-0 mb-3"> Buy Now</button>
+              <p class="fs-4 fw-bold mt-3 mb-0 text-decoration-line-through"> 780 - 1925 THB</p>
+              <p class="fs-6 mb-0 fw-lighter">Wild Honey Moisturising Cream</p>
+              <div class="rating mt-0 mb-2">
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+              </div>
+              <button type="button" class="promotion-sale fs-6">-50 %</button>
             </div>
 
           </div>
@@ -171,9 +170,16 @@
             <img class="p-img border rounded-top "
               src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1506&q=80">
             <div class="product-info border rounded-bottom">
-              <p class="fs-6 mt-3 mb-0">450 THB</p>
-              <p class="fs-4">ACT+ Arce</p>
-              <button class="btn btn-primary mt-0 mb-3"> Buy Now</button>
+              <p class="fs-4 fw-bold mt-3 mb-0 text-decoration-line-through"> 1570 - 2500 THB</p>
+              <p class="fs-6 mb-0 fw-lighter">Wild Honey Mask</p>
+              <div type="button" class="rating mt-0 mb-2">
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+              </div>
+              <button type="button" class="promotion-sale fs-6">-25 %</button>
             </div>
 
           </div>
@@ -183,57 +189,280 @@
             <img class="p-img border rounded-top "
               src="https://images.unsplash.com/photo-1564020799643-54f7ab923d61?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80">
             <div class="product-info border rounded-bottom">
-              <p class="fs-6 mt-3 mb-0">450 THB</p>
-              <p class="fs-4">ACT+ Arce</p>
-              <button class="btn btn-primary mt-0 mb-3"> Buy Now</button>
+              <p class="fs-4 fw-bold mt-3 mb-0"> 1050 - 2000 THB</p>
+              <p class="fs-6 mb-0 fw-lighter">Wild Honey Serum</p>
+              <div class="rating mt-0 mb-2">
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="product-item border-0 border-black rounded">
+            <img class="p-img border rounded-top "
+              src="https://plus.unsplash.com/premium_photo-1681364365218-2a882a191f2a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80">
+            <div class="product-info border rounded-bottom">
+              <p class="fs-4 fw-bold mt-3 mb-0"> 1050 - 2000 THB</p>
+              <p class="fs-6 mb-0 fw-lighter">Wild Honey Cream</p>
+              <div class="rating mt-0 mb-2">
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+              </div>
+
             </div>
 
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="container mb-4">
-    <div class="row g-5">
-      <div class="col-6">
-        <div class="promotion-box border">
-          <img
-            src="https://images.unsplash.com/photo-1633793566102-ee7793834059?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
-            alt="promotion" class="promotion-img">
-          <button class="promotion-sale fs-4">Sale 50 %</button>
-          <p class="promotion-info-main display-6 fw-bolder">50% of Everything</p>
-          <p class="promotion-info-mass fs-3 fw-bolder">Lorem ipsum dolor sit amet consectetur.</p>
-          <button class="promotion-btn btn btn-outline-secondary fs-3">More details</button>
+    <div class="container mb-4">
+      <div class="row g-5">
+        <div class="col-6">
+          <div class="promotion-box border">
+            <img
+              src="https://images.unsplash.com/photo-1633793566102-ee7793834059?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+              alt="promotion" class="promotion-img">
+            <p class="promotion-info-main display-6 fw-bolder">50% of Everything</p>
+            <p class="promotion-info-mass fs-3 fw-bolder">Lorem ipsum dolor sit amet consectetur.</p>
+            <button type="button" class="promotion-btn btn btn-outline-secondary fs-3">More details</button>
 
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="promotion-box border">
+            <img
+              src="https://images.unsplash.com/photo-1599022484226-2cd40d53a027?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1455&q=80"
+              alt="promotion" class="promotion-img">
+            <button type="button" class="promotion-new fs-4">New Arrival</button>
+            <p class="promotion-info-main display-6 fw-bolder">New Arrivals</p>
+            <p class="promotion-info-mass fs-3 fw-bolder">Lorem ipsum dolor sit amet consectetur.</p>
+            <button type="button" class="promotion-btn btn btn-outline-secondary fs-3">More details</button>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8">
+          <h1 class="display-4 text-center mt-5 p-0 fw-bold">Our Products</h1>
+          <div class="d-flex justify-content-evenly mt-3">
+            <div type="button" class="btn btn-outline-dark fs-5 fst-italic">Serum</div>
+            <div type="button" class="btn btn-outline-dark fs-5 fst-italic">Cream</div>
+            <div type="button" class="btn btn-outline-dark fs-5 fst-italic">Mask</div>
+            <div type="button" class="btn btn-outline-dark fs-5 fst-italic">Moisturing Cream</div>
+          </div>
+        </div>
+        <div class="col-2"></div>
+      </div>
+    </div>
+    <div class="album bg-body-tertiary ">
+      <div class="container mt-4">
+        <div class="row">
+          <div class="col-3">
+            <div class="product-item border-0 border-black rounded">
+              <img class="p-img border rounded-top "
+                src="https://plus.unsplash.com/premium_photo-1681364363935-5320f60904e5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1573&q=80">
+              <div class="product-info border rounded-bottom">
+                <p class="fs-6 mb-0 fw-lighter mt-3 text-start mx-3">Wild Honey Moisturising Cream</p>
+                <p class="fs-4 fw-bold text-start mx-3 mt-3"> 890 THB</p>
+                <button class="btn product-cart btn-outline-dark" onclick="addtocart()">Add to cart</button>
+                <button class="btn product-fav like-button" onclick="likeproduct(this)" data-liked="false"><i class="bi bi-heart"></i></button>
+                
+
+              </div>
+
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="product-item border-0 border-black rounded">
+              <img class="p-img border rounded-top "
+                src="https://plus.unsplash.com/premium_photo-1681364366165-526bf6247d7f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80 ">
+              <div class="product-info border rounded-bottom">
+                <p class="fs-6 mb-0 fw-lighter mt-3 text-start mx-3">Wild Honey Moisturising Cream</p>
+                <p class="fs-4 fw-bold text-start mx-3 mt-3"> 1,500 THB</p>
+                <button class="btn product-cart btn-outline-dark">Add to cart</button>
+                <button class="btn product-fav like-button" onclick="likeproduct(this)" data-liked="false"><i class="bi bi-heart"></i></button>
+
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-3">
+            <div class="product-item border-0 border-black rounded">
+              <img class="p-img border rounded-top "
+                src="https://images.unsplash.com/photo-1615397349754-cfa2066a298e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80">
+              <div class="product-info border rounded-bottom">
+                <p class="fs-6 mb-0 fw-lighter mt-3 text-start mx-3">Wild Honey Moisturising Cream</p>
+                <p class="fs-4 fw-bold text-start mx-3 mt-3"> 1020 THB</p>
+                <button class="btn product-cart btn-outline-dark">Add to cart</button>
+                <button class="btn product-fav like-button" onclick="likeproduct(this)" data-liked="false"><i class="bi bi-heart"></i></button>
+
+              </div>
+
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="product-item border-0 border-black rounded">
+              <img class="p-img border rounded-top "
+                src="https://images.unsplash.com/photo-1618120508902-c8d05e7985ee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80">
+              <div class="product-info border rounded-bottom">
+                <p class="fs-6 mb-0 fw-lighter mt-3 text-start mx-3">Wild Honey Moisturising Cream</p>
+                <p class="fs-4 fw-bold text-start mx-3 mt-3"> 1050 THB</p>
+                <button class="btn product-cart btn-outline-dark">Add to cart</button>
+                <button class="btn product-fav like-button" onclick="likeproduct(this)" data-liked="false"><i class="bi bi-heart"></i></button>
+              </div>
+
+            </div>
+          </div>
         </div>
       </div>
-      <div class="col-6">
-        <div class="promotion-box border">
-          <img
-            src="https://images.unsplash.com/photo-1599022484226-2cd40d53a027?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1455&q=80"
-            alt="promotion" class="promotion-img">
-          <button class="promotion-new fs-4">New Arrival</button>
-          <p class="promotion-info-main display-6 fw-bolder">New Arrivals</p>
-          <p class="promotion-info-mass fs-3 fw-bolder">Lorem ipsum dolor sit amet consectetur.</p>
-          <button class="promotion-btn btn btn-outline-secondary fs-3">More details</button>
+    </div>
+  </div>
 
+  <div class="modals" style= display:none;>
+    <div class="modals-bg">
+      <div class=" modals-page">
+        <h2>Details</h2>
+
+        <div class="modaldesp-contend">
+          <img class="modals-img"
+            src="https://images.unsplash.com/photo-1618120508902-c8d05e7985ee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80"
+            alt="">
+          <div class="modaldesp-info mx-3">
+            <p>Product Name</p>
+            <p class="mt-3">500 THB</p>
+            <p class="mt-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque impedit maxime odio
+              repellendus nisi error, quas atque illum animi ipsum distinctio optio vero sint natus cupiditate eveniet
+              eum quis voluptas!</p>
+            <div class="btns-control">
+              <button class="btns mx-3">Close</button>
+              <button class="btbs btns-buy">Add to Cart</button>
+            </div>
+          </div>
         </div>
       </div>
-     
     </div>
   </div>
-  <div class="container mt-2">
-    <div class="d-flex justify-content-center mt-3">
-      <button type="button" class="btn btn-outline-secondary mx-4">Catagories</button>
-      <button type="button" class="btn btn-outline-secondary mx-4">Skincare</button>
-      <button type="button" class="btn btn-outline-secondary mx-4">Foams</button>
-      <button type="button" class="btn btn-outline-secondary mx-4">Others</button>
+  <div class="modals" style ="display: none;">
+    <div class="modals-bg">
+      <div class=" modals-page">
+        <h2>My cart</h2>
+
+        <div class="cartlist">
+          <div class="cartlist-item">
+            <div class="cartlist-left">
+              <img src="https://images.unsplash.com/photo-1618120508902-c8d05e7985ee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="">
+              <div class="cartlist-info mx-3">
+                <p>Name</p>
+                <p>500 THB</p>
+              </div>
+            </div>
+            <div class="cartlist-right">
+              <p class="btnc mx-2">-</p>
+              <p>1</p>
+              <p class="btnc mx-2">+</p>
+            </div>
+          </div>
+          <div class="cartlist-item mt-2">
+            <div class="cartlist-left">
+              <img src="https://images.unsplash.com/photo-1618120508902-c8d05e7985ee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="">
+              <div class="cartlist-info mx-3">
+                <p>Name</p>
+                <p>500 THB</p>
+              </div>
+            </div>
+            <div class="cartlist-right">
+              <p class="btnc mx-2">-</p>
+              <p>1</p>
+              <p class="btnc mx-2">+</p>
+            </div>
+          </div>
+          <div class="cartlist-item mt-2">
+            <div class="cartlist-left">
+              <img src="https://images.unsplash.com/photo-1618120508902-c8d05e7985ee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="">
+              <div class="cartlist-info mx-3">
+                <p>Name</p>
+                <p>500 THB</p>
+              </div>
+            </div>
+            <div class="cartlist-right">
+              <p class="btnc mx-2">-</p>
+              <p>1</p>
+              <p class="btnc mx-2">+</p>
+            </div>
+          </div>
+          <div class="cartlist-item mt-2">
+            <div class="cartlist-left">
+              <img src="https://images.unsplash.com/photo-1618120508902-c8d05e7985ee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="">
+              <div class="cartlist-info mx-3">
+                <p>Name</p>
+                <p>500 THB</p>
+              </div>
+            </div>
+            <div class="cartlist-right">
+              <p class="btnc mx-2">-</p>
+              <p>1</p>
+              <p class="btnc mx-2">+</p>
+            </div>
+          </div>
+          <div class="cartlist-item mt-2">
+            <div class="cartlist-left">
+              <img src="https://images.unsplash.com/photo-1618120508902-c8d05e7985ee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="">
+              <div class="cartlist-info mx-3">
+                <p>Name</p>
+                <p>500 THB</p>
+              </div>
+            </div>
+            <div class="cartlist-right">
+              <p class="btnc mx-2">-</p>
+              <p>1</p>
+              <p class="btnc mx-2">+</p>
+            </div>
+          </div>
+          <div class="btns-control">
+            <button class="btns mx-3">Cancel</button>
+            <button class="btbs btns-buy">Buy</button>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-
-
+  <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+          <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+        </a>
+        <span class="mb-3 mb-md-0 text-body-secondary mt-3"><img src="https://cdn.pixabay.com/photo/2017/01/31/13/14/animal-2023924_1280.png" width="40px" height="25px"> Shopping Mall</span>
+      </div>
+  
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3"><i class="bi bi-emoji-smile"></i></li>
+        <li class="ms-3"><i class="bi bi-emoji-smile-upside-down-fill"></i></li>
+        <li class="ms-3"><i class="bi bi-emoji-smile"></i></li>
+        <li class="ms-3"><i class="bi bi-emoji-smile-upside-down-fill"></i></li>
+      </ul>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
 </html>
