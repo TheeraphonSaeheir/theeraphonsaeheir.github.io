@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+    <header class="container-fluid bg-secondary bg-gradient  ">
+        <div class="row align-items-start ">
+            <div class="col-2 text-center text-body-tertiary">
+                <i class="bi bi-telephone-outbound"></i> 82-341-0990
+            </div>
+            <div class="col-8 text-center text-body-tertiary topbar">
+                Get 50 % Off on select Items | <a class="icon-link text-decoration-none text-center" href="index.html">
+                    Home
+                </a>
+            </div>
+            <div class="col-2 text-end text-body-tertiary">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="dropdown">
+                            <button class="bg-secondary bg-gradient dropdown-toggle fs-6 text-body-tertiary border-0"
+                                type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Eng
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Thai</a></li>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="dropdown">
+                            <button class="bg-secondary bg-gradient dropdown-toggle fs-6 text-body-tertiary border-0"
+                                type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Light
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Dark</a></li>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="container">
+
+        <div class="row m-0 p-0">
+          <div class="col-3 text-start">
+            <div class="fs-4 text-secondary-emphasis m-2 text-start">
+              <img src="https://cdn.pixabay.com/photo/2017/01/31/13/14/animal-2023924_1280.png" width="80px" height="50px">
+            </div>
+          </div>
+          <div class="col-6">
+            <ul class="d-flex justify-content-evenly no-bullet align-items-center">
+              <li><a href="index.html" class=" fs-5 ">Home</a></li>
+              <li><a href="product.html" class=" fs-5 active-menu disable">Products</a></li>
+              <li><a href="#" class="fs-5">Blog</a></li>
+              <li><a href="#" class="fs-5">Page</a></li>
+              <li><a href="#" class="fs-5">Contact</a></li>
+            </ul>
+    
+          </div>
+          <div class="col-3 text-center text-secondary-emphasis">
+            <div class="d-flex align-items-center justify-content-end">
+              <a href="#" class="text-start mt-2"><i class="bi bi-cart fs-3 me-3"> </i></a>
+              <p class="cart-count" id="addcart">0</p>
+            </div>
+          </div>
+      </nav>
+
+
+    <div class="container-bar bg-body-tertiary">
+        <div class="d-flex display-5 fw-bolder fst-italic mb-0 ms-3">
+            <p class="mt-3">Shop</p>
+        </div>
+        <ol class="breadcrumb p-0 ms-3 bg-body-tertiary rounded-3 ">
+            <li class="breadcrumb-item text-decoration-none mt-0"><a
+                    class="link-body-emphasis fw-semibold text-decoration-none" href="index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Products</li>
+        </ol>
+
+        <div class="row mt-1 ms-3">
+            <div class="col-2 side-bar m-2 border">
+                <div class="fs-2 border-bottom box-shadow fst-italic">Categories</div>
+                <form class="d-flex m-2 mt-1" role="search">
+                    <input class="form-control me-2" type="search" id="search" placeholder="Search" aria-label="Search" onkeyup="searchProducts()">
+                   
+                </form>
+                <div class=" d-flex flex-column">
+                    <button type="button" class="btn-list mt-2 fs-5 fst-italic" onclick="filterproducts('All')">All Catagories</button>
+                    <button type="button" class="btn-list mt-2 fs-5 fst-italic" onclick="filterproducts('Cream')">Cream</button>
+                    <button type="button" class="btn-list mt-2 fs-5 fst-italic" onclick="filterproducts('Mask')">Mask</button>
+                    <button type="button" class="btn-list mt-2 fs-5 fst-italic" onclick="filterproducts('Serum')">Serum</button>
+                    <button type="button" class="btn-list mt-2 fs-5 fst-italic" onclick="filterproducts('Skincare')">Skincare</button>
+                </div>
+            </div>
+            <div class="col-9">
+                <div class="album bg-body-tertiary ">
+                    <div class="container mt-4">
+                        <div id="product-list" class="row">
+                            <div class="col-3">
+                                <div class="product-item border-0 border-black rounded">
+                                  <img class="p-list border rounded-top "
+                                    src="https://plus.unsplash.com/premium_photo-1681364363935-5320f60904e5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1573&q=80">
+                                  <div class="product-info border rounded-bottom">
+                                    <p class="fs-6 mb-0 fw-lighter mt-3 text-start mx-3">Wild Honey Moisturising Cream</p>
+                                    <p class="fs-6 fw-bold text-start mx-3 mt-3"> 890 THB</p>
+                                    <button class="btn product-cart btn-outline-dark"><a href="productpage.html" class="shopnow">Shopp now </a></button>
+                                    <button class="btn product-fav like-button" onclick="likeproduct(this)" data-liked="false"><i class="bi bi-heart"></i></button>
+                                  </div>          
+                                </div>
+                              </div>
+                              <div class="col-3">
+                                <div class="product-item border-0 border-black rounded">
+                                  <img class="p-list border rounded-top "
+                                    src="https://images.unsplash.com/photo-1564020799643-54f7ab923d61?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80">
+                                  <div class="product-info border rounded-bottom">
+                                    <p class="fs-6 mb-0 fw-lighter mt-3 text-start mx-3">Wild Honey Moisturising Serom</p>
+                                    <p class="fs-6 fw-bold text-start mx-3 mt-3"> 1050 THB</p>
+                                    <button class="btn product-cart btn-outline-dark">Shop now</button>
+                                    <button class="btn product-fav like-button" onclick="likeproduct(this)" data-liked="false"><i class="bi bi-heart"></i></button>
+                                  </div>          
+                                </div>
+                              </div> 
+                              <div class="col-3">
+                                <div class="product-item border-0 border-black rounded">
+                                  <img class="p-list border rounded-top "
+                                    src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1506&q=80">
+                                  <div class="product-info border rounded-bottom">
+                                    <p class="fs-6 mb-0 fw-lighter mt-3 text-start mx-3">Wild Honey Moisturising Mask</p>
+                                    <p class="fs-6 fw-bold text-start mx-3 mt-3"> 1500 THB</p>
+                                    <button class="btn product-cart btn-outline-dark">Shop now</button>
+                                    <button class="btn product-fav like-button" onclick="likeproduct(this)" data-liked="false"><i class="bi bi-heart"></i></button>
+                                  </div>          
+                                </div>
+                              </div> 
+                              <div class="col-3">
+                                <div class="product-item border-0 border-black rounded">
+                                  <img class="p-list border rounded-top "
+                                    src="https://images.unsplash.com/photo-1576426863848-c21f53c60b19?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                                  <div class="product-info border rounded-bottom">
+                                    <p class="fs-6 mb-0 fw-lighter mt-3 text-start mx-3">Wild Honey Moisturising Skincare</p>
+                                    <p class="fs-6 fw-bold text-start mx-3 mt-3"> 1080 THB</p>
+                                    <button class="btn product-cart btn-outline-dark">Shop now</button>
+                                    <button class="btn product-fav like-button" onclick="likeproduct(this)" data-liked="false"><i class="bi bi-heart"></i></button>
+                                  </div>          
+                                </div>
+                              </div>          
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+<script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</html>
